@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Sun Jan 28 13:49:37 2024
+# Process ID: 6276
+# Current directory: C:/Users/Tugdual LE PELLETER/Documents/Travail/Repositories/gen_heartbeat/projects/gen_heartbeat_wrapper_zedboard
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6636 C:\Users\Tugdual LE PELLETER\Documents\Travail\Repositories\gen_heartbeat\projects\gen_heartbeat_wrapper_zedboard\gen_heartbeat_wrapper_zedboard.xpr
+# Log file: C:/Users/Tugdual LE PELLETER/Documents/Travail/Repositories/gen_heartbeat/projects/gen_heartbeat_wrapper_zedboard/vivado.log
+# Journal file: C:/Users/Tugdual LE PELLETER/Documents/Travail/Repositories/gen_heartbeat/projects/gen_heartbeat_wrapper_zedboard\vivado.jou
+# Running On: WORKSTATION, OS: Windows, CPU Frequency: 2611 MHz, CPU Physical cores: 10, Host memory: 16794 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Tugdual LE PELLETER/Documents/Travail/Repositories/gen_heartbeat/projects/gen_heartbeat_wrapper_zedboard/gen_heartbeat_wrapper_zedboard.xpr}
+update_compile_order -fileset sources_1

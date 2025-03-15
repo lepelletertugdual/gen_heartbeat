@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Sat Nov 11 12:24:15 2023
+# Process ID: 1780
+# Current directory: X:/repositories/gen_heartbeat/projects/gen_heartbeat/gen_heartbeat.runs/ip_mmcm_synth_1
+# Command line: vivado.exe -log ip_mmcm.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ip_mmcm.tcl
+# Log file: X:/repositories/gen_heartbeat/projects/gen_heartbeat/gen_heartbeat.runs/ip_mmcm_synth_1/ip_mmcm.vds
+# Journal file: X:/repositories/gen_heartbeat/projects/gen_heartbeat/gen_heartbeat.runs/ip_mmcm_synth_1\vivado.jou
+# Running On: WORKSTATION, OS: Windows, CPU Frequency: 2611 MHz, CPU Physical cores: 10, Host memory: 16794 MB
+#-----------------------------------------------------------
+source ip_mmcm.tcl -notrace

@@ -1,0 +1,7 @@
+Running: xsim.dir/bch_gen_heartbeat_behav/xsimk.exe -simmode gui -wdb bch_gen_heartbeat_behav.wdb -simrunnum 0 -socket 49733
+Design successfully loaded
+Design Loading Memory Usage: 7812 KB (Peak: 7812 KB)
+Design Loading CPU Usage: 0 ms
+Simulation completed
+Simulation Memory Usage: 9136 KB (Peak: 9136 KB)
+Simulation CPU Usage: 15 ms

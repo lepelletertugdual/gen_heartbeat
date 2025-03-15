@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Sat Nov 11 12:22:58 2023
+# Process ID: 2168
+# Current directory: X:/repositories/gen_heartbeat/projects/gen_heartbeat
+# Command line: vivado.exe -mode tcl -source ./run_gen_heartbeat.tcl
+# Log file: X:/repositories/gen_heartbeat/projects/gen_heartbeat/vivado.log
+# Journal file: X:/repositories/gen_heartbeat/projects/gen_heartbeat\vivado.jou
+# Running On: WORKSTATION, OS: Windows, CPU Frequency: 2611 MHz, CPU Physical cores: 10, Host memory: 16794 MB
+#-----------------------------------------------------------
+source ./run_gen_heartbeat.tcl
+update_compile_order -fileset sources_1
+launch_simulation
+source bch_gen_heartbeat.tcl
+current_wave_config {Untitled 1}
+add_wave {{/bch_gen_heartbeat/inst_dut_gen_heartbeat/i_clk}} {{/bch_gen_heartbeat/inst_dut_gen_heartbeat/i_rst}} {{/bch_gen_heartbeat/inst_dut_gen_heartbeat/o_alive}} {{/bch_gen_heartbeat/inst_dut_gen_heartbeat/o_error}} {{/bch_gen_heartbeat/inst_dut_gen_heartbeat/s_clk}} {{/bch_gen_heartbeat/inst_dut_gen_heartbeat/s_rst}} {{/bch_gen_heartbeat/inst_dut_gen_heartbeat/s_cnt}} {{/bch_gen_heartbeat/inst_dut_gen_heartbeat/s_alive}} {{/bch_gen_heartbeat/inst_dut_gen_heartbeat/s_error_ratio}} {{/bch_gen_heartbeat/inst_dut_gen_heartbeat/g_clk_i_freq}} {{/bch_gen_heartbeat/inst_dut_gen_heartbeat/g_clk_o_freq}} {{/bch_gen_heartbeat/inst_dut_gen_heartbeat/c_clk_ratio}} 
+restart
+run all
+create_ip -name clk_wiz -vendor xilinx.com -library ip -version 6.0 -module_name ip_mmcm -dir X:/repositories/gen_heartbeat/sources/ip
+set_property CONFIG.Component_Name {ip_mmcm} [get_ips ip_mmcm]
+generate_target {instantiation_template} [get_files x:/repositories/gen_heartbeat/sources/ip/ip_mmcm/ip_mmcm.xci]
+generate_target all [get_files  x:/repositories/gen_heartbeat/sources/ip/ip_mmcm/ip_mmcm.xci]
+catch { config_ip_cache -export [get_ips -all ip_mmcm] }
+export_ip_user_files -of_objects [get_files x:/repositories/gen_heartbeat/sources/ip/ip_mmcm/ip_mmcm.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] x:/repositories/gen_heartbeat/sources/ip/ip_mmcm/ip_mmcm.xci]
+launch_runs ip_mmcm_synth_1 -jobs 6
+wait_on_run ip_mmcm_synth_1
+export_simulation -of_objects [get_files x:/repositories/gen_heartbeat/sources/ip/ip_mmcm/ip_mmcm.xci] -directory X:/repositories/gen_heartbeat/projects/gen_heartbeat/gen_heartbeat.ip_user_files/sim_scripts -ip_user_files_dir X:/repositories/gen_heartbeat/projects/gen_heartbeat/gen_heartbeat.ip_user_files -ipstatic_source_dir X:/repositories/gen_heartbeat/projects/gen_heartbeat/gen_heartbeat.ip_user_files/ipstatic -lib_map_path [list {modelsim=X:/repositories/gen_heartbeat/projects/gen_heartbeat/gen_heartbeat.cache/compile_simlib/modelsim} {questa=X:/repositories/gen_heartbeat/projects/gen_heartbeat/gen_heartbeat.cache/compile_simlib/questa} {riviera=X:/repositories/gen_heartbeat/projects/gen_heartbeat/gen_heartbeat.cache/compile_simlib/riviera} {activehdl=X:/repositories/gen_heartbeat/projects/gen_heartbeat/gen_heartbeat.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+close_sim
